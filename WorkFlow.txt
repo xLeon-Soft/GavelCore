@@ -1,0 +1,109 @@
+GavelCore - Flujo de Trabajo con Git
+
+Este documento define cómo trabajar en equipo utilizando Git y GitHub para mantener el proyecto organizado, evitar conflictos y asegurar la calidad del código.
+---------------------------------------------------------------------------------------
+1. Estructura de ramas
+
+El proyecto utiliza las siguientes ramas:
+
+main
+Contiene la versión estable del sistema. Solo código probado y listo.
+develop
+Rama de integración donde se unen todos los avances del equipo.
+feature/*
+Ramas para nuevas funcionalidades.
+fix/*
+Ramas para corrección de errores.
+---------------------------------------------------------------------------------------
+2. Reglas generales
+No trabajar directamente en main
+No trabajar directamente en develop
+Todo cambio debe hacerse en una rama nueva
+Una rama debe representar una sola tarea
+Usar nombres claros y descriptivos
+
+Ejemplos de nombres:
+
+feature/frontend-login
+feature/backend-auth
+feature/database-schema
+fix/login-error
+---------------------------------------------------------------------------------------
+3. Flujo de trabajo paso a paso
+Paso 1: Actualizar el repositorio
+
+Antes de empezar cualquier tarea:
+
+git checkout develop
+git pull
+
+Paso 2: Crear una nueva rama
+git checkout -b feature/nombre-de-la-funcionalidad
+
+Ejemplo:
+
+git checkout -b feature/frontend-login
+Paso 3: Trabajar y hacer commits
+git add .
+git commit -m "feat: implement login form"
+Paso 4: Subir la rama
+git push origin feature/nombre-de-la-funcionalidad
+Paso 5: Crear Pull Request
+Ir a GitHub
+Crear Pull Request hacia develop
+Esperar revisión antes de hacer merge
+---------------------------------------------------------------------------------------
+4. Integración de cambios
+
+Cuando alguien hace merge a develop, tu rama puede quedar desactualizada.
+
+Antes de hacer tu Pull Request, debes actualizar tu rama:
+
+git checkout develop
+git pull
+git checkout feature/nombre-de-la-funcionalidad
+git merge develop
+---------------------------------------------------------------------------------------
+5. Resolución de conflictos
+
+Si Git detecta conflictos:
+
+Abrir los archivos afectados
+Elegir qué cambios conservar
+Guardar los cambios
+Ejecutar:
+git add .
+git commit -m "fix: resolve merge conflicts"
+---------------------------------------------------------------------------------------
+6. Buenas prácticas
+Hacer commits pequeños y frecuentes
+Escribir mensajes claros en los commits
+No mezclar múltiples funcionalidades en una misma rama
+Mantener la rama actualizada con develop
+Revisar el código antes de hacer merge
+---------------------------------------------------------------------------------------
+7. Convención de commits
+
+Usar los siguientes prefijos:
+
+feat: nueva funcionalidad
+fix: corrección de errores
+refactor: mejora interna
+docs: documentación
+
+Ejemplos:
+
+git commit -m "feat: add document generator"
+git commit -m "fix: login validation error"
+---------------------------------------------------------------------------------------
+8. Objetivo de este flujo
+Evitar conflictos entre desarrolladores
+Mantener el código organizado
+Facilitar la integración de cambios
+Mejorar la calidad del proyecto
+---------------------------------------------------------------------------------------
+9. Resumen
+Cada persona trabaja en su propia rama
+Todos integran sus cambios en develop
+main solo contiene versiones estables
+Se usan Pull Requests para controlar la calidad
