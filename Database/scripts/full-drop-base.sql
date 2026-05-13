@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS auditoria;
+DROP TABLE IF EXISTS citas;
+DROP TABLE IF EXISTS documento_historial_estados;
+DROP TABLE IF EXISTS documento_variables_valores;
+DROP TABLE IF EXISTS documento_partes;
+DROP TABLE IF EXISTS documentos_juridicos;
+DROP TABLE IF EXISTS estados_documento;
+DROP TABLE IF EXISTS plantilla_variables;
+DROP TABLE IF EXISTS plantillas;
+DROP TABLE IF EXISTS categorias_plantilla;
+DROP TABLE IF EXISTS personas;
+DROP TABLE IF EXISTS usuarios;
+DROP TABLE IF EXISTS roles;
