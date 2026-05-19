@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GOchoa\\Downloads\\GavelCore-develop\\GavelCore-develop\\Database\\apijuridica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1ADD0146-A866-4D61-97DA-D18DC6117E09}|apijuridica\\apijuridica.csproj|c:\\users\\gochoa\\downloads\\gavelcore-develop\\gavelcore-develop\\database\\apijuridica\\apijuridica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1ADD0146-A866-4D61-97DA-D18DC6117E09}|apijuridica\\apijuridica.csproj|solutionrelative:apijuridica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\GOchoa\\Downloads\\GavelCore-develop\\GavelCore-develop\\Database\\apijuridica\\apijuridica\\appsettings.json",
+              "RelativeDocumentMoniker": "apijuridica\\appsettings.json",
+              "ToolTip": "C:\\Users\\GOchoa\\Downloads\\GavelCore-develop\\GavelCore-develop\\Database\\apijuridica\\apijuridica\\appsettings.json",
+              "RelativeToolTip": "apijuridica\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-18T23:36:43.594Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
